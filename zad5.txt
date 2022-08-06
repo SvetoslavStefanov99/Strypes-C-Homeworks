@@ -1,0 +1,2 @@
+sort -r numbers.txt | head -n 1
+sort -r numbers.txt | tail -n 1
