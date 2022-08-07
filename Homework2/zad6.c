@@ -7,6 +7,18 @@ int compareBasic(float a,float b){
     return a==b;
 }
 
+int compareMyEPSSimple(float a,float b){
+    if (((a - EPS) < b) && 
+      ((a + EPS) > b))
+   {
+    return 1;
+   }
+  else
+   {
+    return 0;
+   }
+}
+
 int compareMyEPS(float a,float b){
     return fabs(a-b)<EPS;
 } 
@@ -36,6 +48,9 @@ int main(){
     printf("number4: %0.20f\n",number4);
     if(compareBasic(number3,number4)){
         printf("==: Equals!\n");
+    }else printf("==: Not equals!\n");
+    if(compareMyEPSSimple(number3,number4)){
+        printf("My EPS Simple: Equals!\n");
     }else printf("==: Not equals!\n");
     if(compareMyEPS(number3,number4)){
         printf("My EPS: Equals!\n");
