@@ -1,2 +1,2 @@
-sort -n numbers.txt | tail -n 1
-sort -n numbers.txt | head -n 1
+sort -n numbers.txt | tail -n 1         най-голямо число
+sort -n numbers.txt | head -n 1         най-малко число
