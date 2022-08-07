@@ -51,7 +51,7 @@ int main(){
     }else printf("==: Not equals!\n");
     if(compareMyEPSSimple(number3,number4)){
         printf("My EPS Simple: Equals!\n");
-    }else printf("==: Not equals!\n");
+    }else printf("My EPS Simple: Not equals!\n");
     if(compareMyEPS(number3,number4)){
         printf("My EPS: Equals!\n");
     }else printf("My EPS: Not equals!\n");
