@@ -2,7 +2,7 @@
 #include<stdint.h>
 
 void Reverse(char* ptr);
-unsigned strLen(char* ptr);
+size_t strLen(char* ptr);
 
 int main(){
     char string[]="Strypes is very nice!";
@@ -22,10 +22,10 @@ void Reverse(char* ptr){
     }
 }
 
-unsigned strLen(char* ptr){
-    unsigned length=0;
-    for(int i=0; ptr[i]!='\0'; i++){
-        length=i;
+size_t strLen(char *ptr){
+    size_t count = 0ul;
+    while (*(ptr + count)){
+        count++;
     }
-    return length+1;
+    return count;
 }
